@@ -17,6 +17,9 @@ server <- function(input, output, session) {
       "Low" = "Low",
       "Medium" = "Medium",
       "High" = "High",
-      "Critical" = "Critical"), selected = NULL)})
+      "Critical" = "Critical"), selected = NULL)
+    print(getwd())
+    write.csv(1, "test.csv")  
+  })
 }
 shinyApp(ui, server)
